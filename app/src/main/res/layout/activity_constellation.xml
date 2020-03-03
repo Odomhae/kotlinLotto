@@ -46,11 +46,9 @@
         android:maxLines="1"
         android:textColor="@android:color/black"
         android:autoSizeMaxTextSize="48sp"
-        android:autoSizeMinTextSize="24sp"
+        android:autoSizeMinTextSize="30sp"
         android:autoSizeStepGranularity="1sp"
         android:autoSizeTextType="uniform"/>
-
-
 
 
 

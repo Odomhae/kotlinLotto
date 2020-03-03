@@ -16,7 +16,12 @@ class MainActivity : AppCompatActivity() {
         //랜덤번호 카드
         randomCard.setOnClickListener{
             //인텐트만들고 startActivity로 실행
-            startActivity(Intent(this, ResultActivity::class.java))
+            //startActivity(Intent(this, ResultActivity::class.java))
+            val intent = Intent(this, ResultActivity::class.java)
+
+            intent.putIntegerArrayListExtra("result", ArrayList(LottoNumberMaker.getShuffleLottoNumbers()))
+           // intent.putIntegerArrayListExtra("result", ArrayList(getShuffleLottoNumbers()))
+            startActivity(intent)
         }
 
         //별자리
@@ -29,4 +34,5 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, NameActivity::class.java))
         }
     }
+
 }
